@@ -14,3 +14,31 @@ li, a, button {
     font-style: normal;
     font-weight: 400;
 }
+
+/* styles for the header*/
+.header-container {
+    display: flex; /*assigns flex container w/ no direction so items go from left to right automatically*/
+    align-items: stretch; /*take all header items and center them in the middle*/
+}
+
+.header-right-side,
+.header-left-side {
+    flex-grow: 1;
+}
+
+.header-right-side {
+    justify-content: center;
+}
+
+.header-left-side {
+    display: flex; /*getting the logo to align properly*/
+    align-items: center; /*center the logo*/
+}
+
+/* logo stylings, and navigation menu links styles - used chatgpt to make this responsive*/
+.header-left-logo {
+    cursor: pointer; /* when  you hover over the logo it turns into a cursor */
+    max-width: 100%; /* Ensures the logo doesn't exceed the container's width */
+    height: auto; /* Allows the logo to scale proportionally based on its width */
+    max-height: 100px; /* Optionally, you can set a maximum height for the logo */
+}
