@@ -4,8 +4,6 @@
 /*style to override all*/
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 /* styles for lis items, naviations and menus*/
@@ -13,6 +11,14 @@ li, a, button {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #9cd8ff;
+    color: #0c2134;
 }
 
 /* styles for the header*/
@@ -45,4 +51,18 @@ li, a, button {
     max-width: 100%; /* Ensures the logo doesn't exceed the container's width */
     height: auto; /* Allows the logo to scale proportionally based on its width */
     max-height: 100px; /* Optionally, you can set a maximum height for the logo */
+}
+
+/* main content styling using css grid (woo new learnings!)*/
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-container > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
 }
