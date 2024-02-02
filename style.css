@@ -58,6 +58,7 @@ ul.checklist-action li{
     font-size:x-large;
     color: white;
     background-color: #001449;
+    border-radius: 10px;
 }
 
 .header-left-side {
